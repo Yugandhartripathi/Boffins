@@ -13,12 +13,12 @@ const Hero = ({
       icon: "/assets/Icon/heroicons_sm-user.svg",
     },
     {
-      name: "Locations",
-      number: "20",
+      name: "Mentors",
+      number: "10",
       icon: "/assets/Icon/gridicons_location.svg",
     },
     {
-      name: "Server",
+      name: "Lesson",
       number: "50",
       icon: "/assets/Icon/bx_bxs-server.svg",
     },
