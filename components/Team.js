@@ -1,6 +1,5 @@
 import React, { useMemo, useState } from "react";
 import Image from "next/image";
-import Testimoni from "./Testimoni";
 import ButtonPrimary from "./misc/ButtonPrimary";
 import ButtonOutline from "./misc/ButtonOutline.";
 import Maps from "../public/assets/HugeGlobal.svg";
@@ -24,8 +23,11 @@ const Team = () => {
       className="bg-gradient-to-b from-white-300 to-white-500 w-full py-14"
       id="team"
     >
-      <div className="max-w-screen-xl  px-6 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center">
-        <div className="flex flex-col w-full my-16" id="testimoni">
+      <div
+        className="max-w-screen-xl  px-6 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center"
+        id="why"
+      >
+        <div className="flex flex-col w-full my-16">
           <ScrollAnimationWrapper>
             <motion.h3
               variants={scrollAnimation}
@@ -56,7 +58,7 @@ const Team = () => {
           <ScrollAnimationWrapper className="w-full flex flex-col py-12">
             <motion.div variants={scrollAnimation}></motion.div>
           </ScrollAnimationWrapper>
-          <ScrollAnimationWrapper className="relative w-full mt-16">
+          <ScrollAnimationWrapper className="relative w-full mt-16" id="join">
             <motion.div variants={scrollAnimation} custom={{ duration: 3 }}>
               <form onSubmit={handleSubmit}>
                 <div className="absolute rounded-xl  py-8 sm:py-14 px-6 sm:px-12 lg:px-16 w-full flex flex-col sm:flex-row justify-between items-center z-10 bg-white-500">
